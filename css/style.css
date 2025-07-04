@@ -42,6 +42,25 @@ p {
   line-height: 2;
 }
 
+.content-container {
+  padding: 160px 20px;
+}
+
+.content-container h1 {
+  font-size: 64px;
+  line-height: 1.25;
+}
+.content-container h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-container p {
+  font-size: 16px;
+}
+.content-inner {
+  margin: 30px;
+}
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
@@ -61,10 +80,17 @@ p {
 .project-description {
   padding: 120px 60px;
 }
-@media (max-width: 960px) {
+.about-headshot {
+  border-radius: 10px;
+}
+@media (max-width: 900px) {
   .hero h1 {
     font-size: 60px;
     line-height: 1.5;
+  }
+  .content-container {
+    text-align: center;
+    padding: 0px;
   }
   h4 {
     font-size: 44px;
@@ -76,6 +102,9 @@ p {
 }
 @media (max-width: 576px) {
   .hero h1 {
+    font-size: 44px;
+  }
+  .content-container h1 {
     font-size: 44px;
   }
   h4 {
