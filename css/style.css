@@ -7,7 +7,32 @@
 body {
   font-family: var(--accent-font-family);
 }
+.logo {
+  max-width: 150px;
+}
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 30px;
+  margin-left: 15px;
+}
 
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a,
+nav a:hover {
+  color: var(--branding-color);
+}
 h1,
 h4 {
   font-family: var(--heading-font-family);
@@ -109,5 +134,8 @@ p {
   }
   h4 {
     font-size: 36px;
+  }
+  nav a {
+    font-size: 12px;
   }
 }
